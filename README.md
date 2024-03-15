@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +7,7 @@
     <link rel="website icon" type="png" href="Logo_Real_Madrid.png">
     <link rel="stylesheet" href="ActividadobligatoriaCSS.css" type="text/css">
 </head>
-<body <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Oswald&display=swap" rel="stylesheet"> 
     <!--logo y titulo-->
     <p id="inicio">.</p>
@@ -16,7 +15,7 @@
 
         <img class="logo">
         <h1 style="text-align: center;">WEB DE ALEX GUARDIOLA</h1>
-        <h2>unidades trabajadas en entornos de desarrollo 23/24 1º y 2º trimestre</h2>
+        <h2 style="text-align: center;">unidades trabajadas en entornos de desarrollo 23/24 1º y 2º trimestre</h2>
         
 <!--Botones y patrocinadores-->
         <p id="patrocinadores">  

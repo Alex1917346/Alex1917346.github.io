@@ -1,29 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMCF</title>
-    <link rel="website icon" type="png" href="Logo_Real_Madrid.png">
-    <link rel="stylesheet" href="ActividadobligatoriaCSS.css" type="text/css">
-</head>
-<body <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Oswald&display=swap" rel="stylesheet"> 
-    <!--logo y titulo-->
-    <p id="inicio">.</p>
-    <header class="banner" >
-
-        <img class="logo">
-        <h1 style="text-align: center;">REAL MADRID CLUB DE FUTBOL</h1>
-
+        <h1 style="text-align: center;">WEB DE ALEX GUARDIOLA</h1>
+        <h2>unidades trabajadas en entornos de desarrollo 23/24 1º y 2º trimestre</h2>
+        
+<!--Botones y patrocinadores-->
         <p id="patrocinadores">  
             <a class="enlaces" href="#Plantilla"> Plantilla </a>  
             <a class="enlaces" href="#Noticias"> Noticias </a>  
             <a class="enlaces" href="#Titulos"> Titulos</a> 
             <a class="enlaces" href="#socios"> Socios </a>
             <a class="enlaces" href="#campo">Bernabéu </a>
-            <img src="adidas.png" width="45" hspace="15">
+            
+            <img src="![adidas](https://github.com/Alex1917346/Alex1917346.github.io/assets/146730632/55e822e7-3301-4d72-a21f-662a7b4295ee)" width="45" hspace="15">
             <img src="Emirates.png" width="45" hspace="15">
             <img src="Nivea.png" width="50" hspace="15" >
             <img src="hankook.gif" width="45" hspace="15">
@@ -31,12 +17,13 @@
             <img src="ea-sports-logo.gif" width="75" hspace="10">
             <img src="play.gif" width="35" hspace="15">
 
+
         </p> <br>
 
 
     </header>
 
-    <!--Botones y patrocinadores-->
+    
     <nav>
         
     

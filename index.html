@@ -30,6 +30,10 @@
             background-color: #333;
             padding: 10px 0;
             text-align: center;
+            position: fixed; /* Hace que la barra de navegación sea fija */
+            width: 100%; /* Ocupa todo el ancho de la ventana */
+            top: 0; /* Se fija en la parte superior de la ventana */
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
         }
 
         nav ul {
@@ -48,6 +52,13 @@
             text-decoration: none;
             transition: color 0.3s ease-in-out;
         }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        
+       
 
         nav ul li a:hover {
             color: #ffcc00;

@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #FBFFBA;
             color: #333;
         }
 
@@ -78,6 +78,42 @@
             padding-bottom: 5px;
             margin-bottom: 10px;
         }
+
+        .flecha {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(135deg);
+  }
+  .flecha:before, .flecha:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .flecha:before {
+    top: 23px;
+    left: 7px;
+    transform: rotate(-45deg);
+  }
+  .flecha:after {
+    top: 20px;
+    left: 30px;
+    transform: rotate(45deg);
+  }
+  .flecha:hover {
+    background-color: #555;
+  }
 
         @keyframes fadeIn {
             from {
@@ -187,5 +223,6 @@ Git es un sistema de control de versiones distribuido, utilizado principalmente 
             
         </section>
     </div>
+    <div class="flecha" onclick="window.scrollTo(0, 0)"></div>
 </body>
 </html>

@@ -1,92 +1,122 @@
-WEB DE ALEX GUARDIOLA
-<br>
-ENTORNOS DE DESARROLLO
-<br>
--->Proximamente<--
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entornos de Desarrollo</title>
+    <title>Control de Versiones</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
             color: #333;
         }
+
         header {
             background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
             color: #fff;
             padding: 10px 0;
             text-align: center;
         }
-        nav select {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 10px;
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
         }
-        nav input[type="text"] {
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .login {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .login input[type="text"],
+        .login input[type="password"],
+        .login input[type="submit"] {
             padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-        }
-        nav input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
+            margin: 5px;
             border: none;
             border-radius: 5px;
+            width: 200px;
+        }
+
+        .login input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Entornos de Desarrollo</h1>
+        <h1>Control de Versiones</h1>
     </header>
     <nav>
-        <select>
-            <option value="">Seleccionar</option>
-            <option value="introduccion">Introducción</option>
-            <option value="tipos">Tipos de Entornos</option>
-            <option value="herramientas">Herramientas Populares</option>
-            <option value="conclusion">Conclusiones</option>
-        </select>
-        <form action="#" method="get">
-            <input type="text" name="search" placeholder="Buscar...">
-            <input type="submit" value="Buscar">
-        </form>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#control-versiones">Control de Versiones</a></li>
+            <li><a href="#terminologia">Terminología</a></li>
+            <li><a href="#subversion-git">Subversion y Git</a></li>
+            <li><a href="#primeros-pasos-git">Primeros Pasos con Git</a></li>
+            <li><a href="#ramas-git">Gestión de Ramas con Git</a></li>
+        </ul>
     </nav>
-    <section id="introduccion">
-        <h2>Introducción</h2>
-        <p>En esta página web es un ejemplo para una practica.</p>
-        <p>He puesto algo de informacion acerca de los "Tipos de entornos", "Herramientas", como los programas que podemos llegar a utilizar nosotros (los desarrolladores), y una breve "Conclusion".</p>
-    </section>
-    <section id="tipos">
-        <h2>Tipos de Entornos</h2>
-        <p>Existen varios tipos de entornos de desarrollo, como los entornos de desarrollo integrados (IDE), editores de texto avanzados, y entornos de desarrollo en la nube.</p>
-    </section>
-    <section id="herramientas">
-        <h2>Herramientas Populares</h2>
-        <p>Algunas herramientas populares incluyen Visual Studio Code, IntelliJ IDEA, Eclipse, y muchas otras opciones según las necesidades y preferencias del desarrollador.</p>
-    </section>
-    <section id="conclusion">
-        <h2>Conclusiones</h2>
-        <p>Los entornos de desarrollo adecuados pueden mejorar significativamente la productividad y la eficiencia del desarrollo de software. Es importante elegir las herramientas que mejor se adapten a los requisitos del proyecto y las preferencias personales del equipo de desarrollo.</p>
-    </section>
+    <div class="container">
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <!-- Contenido de Introducción -->
+        </section>
+        <section id="control-versiones">
+            <h2>Control de Versiones</h2>
+            <!-- Contenido de Control de Versiones -->
+        </section>
+        <section id="terminologia">
+            <h2>Terminología</h2>
+            <!-- Contenido de Terminología -->
+        </section>
+        <section id="subversion-git">
+            <h2>Subversion y Git</h2>
+            <!-- Contenido de Subversion y Git -->
+        </section>
+        <section id="primeros-pasos-git">
+            <h2>Primeros Pasos con Git</h2>
+            <!-- Contenido de Primeros Pasos con Git -->
+        </section>
+        <section id="ramas-git">
+            <h2>Gestión de Ramas con Git</h2>
+            <!-- Contenido de Gestión de Ramas con Git -->
+        </section>
+    </div>
+    <div class="login">
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Nombre de usuario" required><br>
+            <input type="password" name="password" placeholder="Contraseña" required><br>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
 </body>
 </html>

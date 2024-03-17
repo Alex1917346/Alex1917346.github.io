@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Control de Versiones</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #BFF7FF;
-    color: #333;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Versiones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #BFF7FF;
+            color: #333;
+        }
 
-  header {
-    background-color: #CFABFF;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  header img {
-    width: 150px;
-    height: auto; 
-  }
+        header {
+            background-color: #CFABFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header img {
+            width: 150px;
+            height: auto; 
+        }
 
-  nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
 
-  nav ul li a:hover {
-    color: #ffcc00;
-  }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
 
-  .container {
-    max-width: 800px;
-    margin: 80px auto 20px; /* Ajustado el margen superior para dar espacio a la barra de navegación */
-    padding: 0 20px;
-  }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
 
-  section {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
 
-  section:hover {
-    transform: translateY(-5px);
-  }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
 
-  h2 {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-  }
+        section:hover {
+            transform: translateY(-5px);
+        }
 
-  .flecha {
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+
+
+        .flecha {
     width: 50px;
     height: 50px;
     background-image: url('https://cdn-icons-png.flaticon.com/512/44/44674.png');
@@ -94,70 +94,121 @@
     transition: background-color 0.3s;
     z-index: 1000;
   }
-
   .flecha:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo al pasar el ratón por encima */
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-</style>
+
+        
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-<header>
-    <img src="https://camo.githubusercontent.com/5ee3095535b2812c84aac7f55dce16fac2df91f09ab1afdcff32e3442b56f425/68747470733a2f2f7777772e627573696e6573737472656e64732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031392f30332f5765622d446576656c6f706d656e742d436f6d70616e792e706e67" alt="Logo">
-    <h1>Control de Versiones</h1>
-</header>
-<nav>
-    <ul>
-        <li><a href="#introduccion">Introducción</a></li>
-        <li><a href="#control-versiones">Control de Versiones</a></li>
-        <li><a href="#terminologia">Terminología</a></li>
-        <li><a href="#subversion-git">Subversion y Git</a></li>
-        <li><a href="#primeros-pasos-git">Primeros Pasos con Git</a></li>
-        <li><a href="#ramas-git">Gestión de Ramas con Git</a></li>
-    </ul>
-</nav>
-<div class="container">
-    <section id="introduccion">
-        <h2>Introducción</h2>
-        <p>
-            A la hora de abordar un proyecto, una de las tareas que más trabajo nos lleva es el control de las modificaciones y mejoras realizadas a nuestro código.
-           <br>
-            Esto se hace especialmente complicado si nuestro proyecto contiene mucho código y se va a ir desarrollando en un espacio de tiempo más largo de una tarde, claro.
+    <header>
+        <img src="https://camo.githubusercontent.com/5ee3095535b2812c84aac7f55dce16fac2df91f09ab1afdcff32e3442b56f425/68747470733a2f2f7777772e627573696e6573737472656e64732e636f6d2e706b2f77702d636f6e74656e742f75706c6f6164732f323031392f30332f5765622d446576656c6f706d656e742d436f6d70616e792e706e67" alt="Logo">
+        <h1>Control de Versiones</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#control-versiones">Control de Versiones</a></li>
+            <li><a href="#terminologia">Terminología</a></li>
+            <li><a href="#subversion-git">Subversion y Git</a></li>
+            <li><a href="#primeros-pasos-git">Primeros Pasos con Git</a></li>
+            <li><a href="#ramas-git">Gestión de Ramas con Git</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>
+                A la hora de abordar un proyecto, una de las tareas que más trabajo nos lleva es el control de las modificaciones y mejoras realizadas a nuestro código.
+               <br>
+                Esto se hace especialmente complicado si nuestro proyecto contiene mucho código y se va a ir desarrollando en un espacio de tiempo más largo de una tarde, claro.
+                <br>
+                Existen en el mercado una serie de herramientas de control de versiones, herramientas para documentar los programas y herramientas de refactorización que nos van a ayudar mucho en nuestro quehacer como programador si aprendemos a manejarlas con soltura.
+            </p>
+            
+        </section>
+        <section id="control-versiones">
+            <h2>Control de Versiones</h2>
+            <p>
+                Según encontramos en la Wikipedia, "Se llama control de versiones a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo."
+                zbr>
+                De una manera sencilla es como un diario donde se guardan las modificaciones que hacemos a nuestro código, y que es es de mucha utilidad cuando queremos recuperar un documento, o una carpeta, o un proyecto en un momento concreto de su desarrollo.
+            
+            </p>
+            
+        </section>
+        <section id="terminologia">
+            <h2>Terminología</h2>
+            <p>Antes de entrar en la instalación y manejo de herramientas de control de versiones, veamos los términos que se utilizan y son comunes para la mayoría de estas herramientas:
             <br>
-            Existen en el mercado una serie de herramientas de control de versiones, herramientas para documentar los programas y herramientas de refactorización que nos van a ayudar mucho en nuestro quehacer como programador si aprendemos a manejarlas con soltura.
-        </p>
-        
-    </section>
-    <section id="control-versiones">
-        <h2>Control de Versiones</h2>
-        <p>
-            Según encontramos en la Wikipedia, "Se llama control de versiones a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo."
-            zbr>
-            De una manera sencilla es como un diario donde se guardan las modificaciones que hacemos a nuestro código, y que es es de mucha utilidad cuando queremos recuperar un documento, o una carpeta, o un proyecto en un momento concreto de su desarrollo.
-        
-        </p>
-        
-    </section>
-    <section id="terminologia">
-        <h2>Terminología</h2>
-        <p>Antes de entrar en la instalación y manejo de herramientas de control de versiones, veamos los términos que se utilizan y son comunes para la mayoría de estas herramientas:
-        <br>
-        1-Repositorio: Almacena datos y cambios del proyecto.
-        <br>
-        2-Revisión o versión: Representa una versión específica del proyecto.
-        <br>
-        3-Etiquetar: Asigna etiquetas para identificar versiones importantes.
-        <br>
-        4-Tronco: Línea principal de desarrollo del proyecto.
-        <br>
-        5-Rama: Permite desarrollar nuevas funciones o corregir errores de forma independiente.
-        <br>
-        6-Desplegar: Crea una copia de trabajo del proyecto en
+            1-Repositorio: Almacena datos y cambios del proyecto.
+            <br>
+            2-Revisión o versión: Representa una versión específica del proyecto.
+            <br>
+            3-Etiquetar: Asigna etiquetas para identificar versiones importantes.
+            <br>
+            4-Tronco: Línea principal de desarrollo del proyecto.
+            <br>
+            5-Rama: Permite desarrollar nuevas funciones o corregir errores de forma independiente.
+            <br>
+            6-Desplegar: Crea una copia de trabajo del proyecto en el equipo local.
+            <br>
+            7-Confirmar: Integra los cambios realizados en local al repositorio.
+            <br>
+            8-Actualizar: Integra cambios del repositorio en la copia local.
+            <br>
+            9-Fusión: Une los cambios realizados en diferentes ramas.
+            <br>
+            10-Conflicto: Ocurre cuando dos usuarios modifican el mismo archivo.
+            <br>
+            11-Resolver conflicto: Acción para solucionar conflictos entre cambios.
+            </p>
+            
+        </section>
+        <section id="subversion-git">
+            <h2>Subversion y Git</h2>
+            <p>En el mercado existen dos vías de trabajo para el control de versiones: Subversion y Git. Podemos decantarnos por una u otra dependiendo de nuestras necesidades.
+                <br>
+                Subversion es una herramienta multiplataforma (Win32, Linux, Mac, etc.) de código abierto para el control de versiones. Usa una base de datos central, el repositorio, que contiene los archivos cuyas versiones y respectivas historias se controlan. 
+            <br>
+                GIT
+Git es un sistema de control de versiones distribuido, utilizado principalmente en el desarrollo de software para rastrear los cambios realizados en el código fuente. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux. Con Git, los desarrolladores pueden colaborar en proyectos de manera más eficiente y segura.
+            </p>
+           
+        </section>
+        <section id="primeros-pasos-git">
+            <h2>Primeros Pasos con Git</h2>
+            <p>Empezaremos suponiendo que Git ya se encuentra instalado dentro de nuestro computadora, que lo hemos descargado de la página oficial de Git, después de eso tenemos que configurar nuestro Git con dos comandos:
+            <br>
+            $ git config --global user.name "Mi Nombre"<br>
+            $ git config --global user.email micorreo@example.com
+            <br>
+            Una vez configurado, Lo primero que debemos hacer para iniciar a trabajar con git es identificar que proyecto queremos versionar, una vez hemos realizado esto deberemos de ejecutar el comando:<br>
+            $ git init <br> /*este comando nos servirá para iniciar un repositorio*/
+                
+            </p>
+            
+        </section>
+        <section id="ramas-git">
+            <h2>Gestión de Ramas con Git</h2>
+            <p>Creación y Gestión de Ramas con Git. Introducción a las Ramas en Git: Las ramas en Git son líneas de desarrollo independientes que permiten trabajar en diferentes características, correcciones de errores o experimentos de forma aislada.- La rama principal es comúnmente conocida como master o main, aunque este nombre puede variar según las convenciones de nombres del proyecto.
+                
+            
+            </p>
+            
+        </section>
+    </div>
+    <div class="flecha" onclick="window.scrollTo(0, 0)"></div>
+</body>
+</html>

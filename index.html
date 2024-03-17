@@ -3,19 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Control de Versiones</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .login {
             text-align: center;
             margin-top: 50px;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .login input[type="text"],
@@ -26,6 +87,7 @@
             border: none;
             border-radius: 5px;
             width: 200px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         }
 
         .login input[type="submit"] {
@@ -33,16 +95,60 @@
             color: #fff;
             cursor: pointer;
         }
+
+        .login input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="login">
-        <h2>Iniciar Sesión</h2>
-        <form action="https://alex1917346.github.io/contenido/contenido.html" method="post">
-            <input type="text" name="username" placeholder="Nombre de usuario" required><br>
-            <input type="password" name="password" placeholder="Contraseña" required><br>
-            <input type="submit" value="Iniciar Sesión">
-        </form>
+    <header>
+        <h1>Control de Versiones</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#control-versiones">Control de Versiones</a></li>
+            <li><a href="#terminologia">Terminología</a></li>
+            <li><a href="#subversion-git">Subversion y Git</a></li>
+            <li><a href="#primeros-pasos-git">Primeros Pasos con Git</a></li>
+            <li><a href="#ramas-git">Gestión de Ramas con Git</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>Contenido de Introducción</p>
+        </section>
+        <section id="control-versiones">
+            <h2>Control de Versiones</h2>
+            <p>Contenido de Control de Versiones</p>
+        </section>
+        <section id="terminologia">
+            <h2>Terminología</h2>
+            <p>Contenido de Terminología</p>
+        </section>
+        <section id="subversion-git">
+            <h2>Subversion y Git</h2>
+            <p>Contenido de Subversion y Git</p>
+        </section>
+        <section id="primeros-pasos-git">
+            <h2>Primeros Pasos con Git</h2>
+            <p>Contenido de Primeros Pasos con Git</p>
+        </section>
+        <section id="ramas-git">
+            <h2>Gestión de Ramas con Git</h2>
+            <p>Contenido de Gestión de Ramas con Git</p>
+        </section>
     </div>
 </body>
 </html>
